@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercise 2 </title>
+</head>
+
+<body>
+    <h2 onMouseOver="highlight()" onMouseOut="returnNormal()" style="color: blue; cursor: pointer">  Hover this link </h2>
+    <p>
+      Gan <strong> Bambu </strong> toi thay buang khuang bang khuang <strong> con tim </strong> nay nhu <strong> chet lang </strong>
+    </p>
+
+    <script type="text/javascript">
+        function highlight() {
+            var hi = document.getElementsByTagName("strong");
+            for (var i = 0; i < hi.length; i++) {
+            hi[i].style.backgroundColor = "yellow";
+            }
+        }
+        function returnNormal() {
+            var hi = document.getElementsByTagName("strong");
+            for (var i = 0; i < hi.length; i++) {
+            hi[i].style.backgroundColor = "white";
+            }
+        }
+    </script>
+</body>
+</html>
